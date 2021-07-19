@@ -1,0 +1,14 @@
+{
+  "name": "generat",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "generate":"npx @openapitools/openapi-generator-cli generate -i petstore.json -g typescript-redux-query -o ./temp --additional-properties=withInterfaces",
+    "generateSwagger":"npx @openapitools/openapi-generator-cli generate -i petstore.swagger.json -g typescript-redux-query -o ./tempSwagger --additional-properties=withInterfaces"
+  
+  },
+  "devDependencies": {
+    "@openapitools/openapi-generator-cli": "^2.3.7"
+  }
+}
